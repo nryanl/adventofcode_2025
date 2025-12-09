@@ -16,7 +16,6 @@ def day1():
         # Calculate old and new position
         old_pos = dial_pos
         new_pos_no_mod = dial_pos + num if line[0] == 'R' else dial_pos - num
-        print(f"{new_pos_no_mod % 100}", end="")
 
         # Calculate number of wraps
         # new_pos_no_mod >= 100                (wrap on first rotation)
